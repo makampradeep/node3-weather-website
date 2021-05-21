@@ -17,7 +17,7 @@ else if (response.body.error)
 }
 else
 {
-  callback(undefined,response.body.location.name)
+  callback(undefined,"the location is "+response.body.location.name+ " and it is "+response.body.current.weather_descriptions[0])
 }
    })
 }
